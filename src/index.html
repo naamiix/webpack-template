@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Webpack Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Site Piscine 2</title>
 <link href="main.css" rel="stylesheet"></head>
 <body>
-    <h1>Webpack Template</h1>
+    <div class="login js-login">
+        <form action="index.html" method="post">
+            <h1>Connexion</h1>
+            
+            <label for="name-input">Nom d'utilisateur</label>
+            <input id="name-input" type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+
+            <label for="password-input" >Mot de passe</label>
+            <input id="password-input" type="password" placeholder="Entrer le mot de passe" name="password" required>
+
+            <input type="submit" class='submit-button js-submit-login-button' value='LOGIN' >
+        </form>
+    </div>
+    <header id="header" class="is-not-visible">
+        <div class="container js-container">
+          <a href="#" class="site-title" ><h2>Site Piscine</h2></a>
+        </div>
+        <nav>
+          <ul class="container container_flex js-container">
+            <li><a href="#" title="item" class="current">Eau</a></li>
+            <li><a href="#" title="item">Pompes</a></li>
+            <li><a href="#" title="item">PH</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main id="main" class="is-not-visible">
+        <div class="main-container">
+            <div class="capteur capteur-eau">
+                <table  summary="capteurs">
+                    <caption>Capteurs EAU</caption>
+                    <thead>
+                      <tr>
+                        <th>Débit d'eau</th>
+                        <th>Niveau d'eau</th>
+                        <th>Température de l'eau</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                          <th>Débit d'eau</th>
+                          <th>Niveau d'eau</th>
+                          <th>Température de l'eau</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="debit">54</td>
+                        <td class="niveau">87</td>
+                        <td class="temp">32</td>
+                      </tr>
+                      <tr>
+                        <td class="debit">34</td>
+                        <td class="niveau">72</td>
+                        <td class="temp">76</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="capteur capteur-pompes is-not-visible">
+                <table  summary="capteurs">
+                    <caption>Capteurs Pompes</caption>
+                    <thead>
+                      <tr>
+                        <th>Débit d'eau</th>
+                        <th>Niveau d'eau</th>
+                        <th>Température de l'eau</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                          <th>Débit d'eau</th>
+                          <th>Niveau d'eau</th>
+                          <th>Température de l'eau</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="debit">54</td>
+                        <td class="niveau">87</td>
+                        <td class="temp">32</td>
+                      </tr>
+                      <tr>
+                        <td class="debit">34</td>
+                        <td class="niveau">72</td>
+                        <td class="temp">76</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="capteur capteur-ph is-not-visible">
+                <table  summary="capteurs">
+                    <caption>Capteurs PH</caption>
+                    <thead>
+                      <tr>
+                        <th>Débit d'eau</th>
+                        <th>Niveau d'eau</th>
+                        <th>Température de l'eau</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                          <th>Débit d'eau</th>
+                          <th>Niveau d'eau</th>
+                          <th>Température de l'eau</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="debit">54</td>
+                        <td class="niveau">87</td>
+                        <td class="temp">32</td>
+                      </tr>
+                      <tr>
+                        <td class="debit">34</td>
+                        <td class="niveau">72</td>
+                        <td class="temp">76</td>
+                      </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </main>
+    </body>
 </html>
